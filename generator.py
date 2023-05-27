@@ -1,3 +1,6 @@
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 import tensorflow as tf
 from tensorflow.python.eager.context import PhysicalDevice
 
